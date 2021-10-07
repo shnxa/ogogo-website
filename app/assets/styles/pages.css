@@ -1,0 +1,693 @@
+@font-face {
+    font-family: "Gilroy";
+    src: url("/app/assets/fonts/Gilroy-Thin\ \(1\).ttf") format("truetype")
+         url("/app/assets/fonts/Gilroy-Bold.ttf") format("truetype")     
+   }
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+* {
+    margin: 0 0 0 0;
+    font-family: "Gilroy";
+}
+
+body {
+    overflow-x: hidden;
+    
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+header {
+    height: fit-content;
+    background-image: url('../img/Frame\ 141.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+}
+
+.container {
+    margin-left: 88px;
+    margin-right: 88px;
+}
+
+.modalWindow {
+    width: 100%;
+    background-color: #1c1c1c;
+    height: 428px;
+    position: fixed;
+    z-index: 6;
+    visibility: hidden;
+    
+}
+
+
+
+.py-page-pic img{
+    margin: 0 0 0 0;
+    z-index: 2;
+    padding-bottom: -60px;
+}
+
+.showModal{
+    visibility: visible;
+    width: 100%;
+    background-color: #1c1c1c;
+    height: 428px;
+    position: fixed;
+    z-index: 6;
+    -webkit-box-shadow: 0 10px 17px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 10px 17px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 17px rgba(0, 0, 0, 0.3);
+}
+
+.modal-window-main{
+    border-top: 1px solid #7b7b7b;
+    margin-top: 34px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.modal-headlines {
+    font-size: 24px;
+    padding-top: 34px;
+    color: white;
+    padding-bottom: 20px;
+    line-height: 27px;
+    font-weight: 600;
+
+}
+
+.nav-container {
+    padding-top: 38px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.nav-links{
+    list-style-type: none;
+    display: flex;
+    
+}
+.nav-links a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links a:hover {
+    color: #ff6e00;
+}
+.nav-links button {
+    padding-right: 40px;
+    color: white;
+    background: transparent;
+    border: none;
+}
+
+.nav-links button:last-child{
+    padding-right: 0;
+}
+
+.dropdown button{
+    width: 134px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #ff6e00;
+    border-radius: 99px;
+    color: white;
+}
+
+.dropdown button:hover{
+    background-color: #ff6e00;
+}
+.headline{
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 170px;
+    line-height: 2;
+}
+
+.headline span {
+    color: #ff6e00;
+}
+
+#design-page-pic{
+    width: 639px;
+    margin-left: 230px;
+}
+
+.title{
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+    font-family: 'Gilroy' bold;
+    margin-bottom: 72px;
+
+}
+.application-form-buttons-dark button {
+    width: 240px;
+    height: 52px;
+    border-radius: 73px;
+    background: #ff6e00;
+    border: 1px solid #ff6e00;
+    color: white;
+}
+
+.course-info{
+    display: flex;
+    justify-content: space-between;
+    width: 550px;
+    margin-top: 203px;
+    color:white;
+    
+}
+
+.course-info span {
+    display: block;
+    font-size: 16px;
+}
+
+.course-info p {
+    font-size: 24px;
+}
+
+.about-course{
+    height: 360px;
+    padding-top: 90px;
+}
+
+.title-2{
+    font-size: 48px;
+    color: black;
+    
+}
+
+
+
+
+.course-description {
+    
+    font-size: 24px;
+    margin-top: 60px;
+}
+
+.course-under-description {
+    font-size: 24px;
+    margin-top: 40px;
+}
+
+.about-skills {
+    background-color: #1c1c1c;
+    height: 606px;
+    padding-top: 102px;
+}
+
+.text-abt-skills p{
+    color: white;
+    line-height: 28px;
+    margin-bottom: 30px;
+    font-size: 24px;
+    
+}
+.text-abt-skills p:first-child{
+    margin-top: 30px;
+}
+.text-abt-skills{
+    width: 850px;
+}
+
+.first-unit-pic img{
+    width: 669px;
+    height: 669px;
+    margin: 0 0 0 0;
+    z-index: 2;
+}
+.first-unit-container{
+    margin-left: -81px;
+    margin-right: -81px;
+    display: flex;
+    justify-content: space-between;
+}
+.courses-programm{
+    height: 590px;
+    padding-top: 90px;
+    background-image: url('../img/Frame\ 141.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.abt-py-span{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    color: white;
+    display: block;
+}
+
+.courses-container{
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+.right-side p {
+    height: 55px;
+    border-top: 2px solid #7b7b7b;
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.right-side p:first-child{
+    border-top:  none;
+}
+
+.right-side{
+width: 50%;
+}
+
+
+.left-side {
+    width: 50%;
+}
+.left-side .under-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
+
+}
+.page-svg-background{
+    size: 100%;
+    position: relative;
+    zoom: 110%;
+}
+.svg-background{
+    position: absolute;
+    z-index: 2;
+    margin-top: -32px;
+}
+
+
+.advantages-unit{
+    padding-top: 49px;
+    height: 535px;
+}
+
+.advantages-p{
+    margin-top: 90px;
+
+ 
+}
+
+.advantages-p p {
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.application-form-dark {
+    padding-top: 70px;
+    height: 321px;
+    
+}
+
+.applic-form-p-dark{
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 20px;
+    
+}
+
+.application-form-buttons-dark input {
+    width: 216px;
+    height: 51px;
+    border-radius: 73px;
+    border:1px solid black;
+    background: transparent;
+    text-align: center;
+    outline: transparent;
+    margin-right: 20px;
+    margin-top: 40px;
+}
+
+.application-form-buttons-dark button {
+    width: 240px;
+    height: 52px;
+    border-radius: 73px;
+    background: #ff6e00;
+    border: 1px solid #ff6e00;
+    color: white;
+}
+
+.footer {
+    height: 320px;
+    background-color: #1C1C1C;
+}
+
+.upper div{
+    width: 335px;
+    height: 36px;
+}
+
+.upper {
+    border-bottom: 1px solid #7B7B7B;
+    height: 179px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-p{
+    font-size: 14px;
+    color: white;
+    font-weight: 400;
+}
+
+.p-content-bolder{
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 6%;
+}
+
+.lower{
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.abt-skills-container{
+    display: flex;
+    justify-content: space-between;
+}
+.abt-skills-pic img{
+    margin-top: -180px;
+    padding-bottom: 20px;
+}
+
+#scratch-skills-pic{
+    width: 20%;
+    padding-bottom: 40px;
+    margin-top: -120px;
+}
+
+#ig{
+    margin-right: 32px;
+}
+
+.courses-btn button{
+    width: 112px;
+    height: 52px;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 70px;
+    color: white;
+    margin-right: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    
+}
+
+.courses-btn {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.courses-btn button:hover{
+    
+    background: linear-gradient(180deg, #FF7A00 25%, #FF9900 87%);
+    border: #ff6e00;
+    box-shadow: 0px 4px 10px rgba(255, 122, 0, 0.25);
+    animation-name: floating;
+    animation-duration: 1s;
+    animation-fill-mode:forwards;
+    animation-timing-function: ease-out;
+    
+    margin-top: 5px;
+
+}
+@keyframes floating {  
+    100% { transform: translate(0, -10px);}
+
+    
+}
+#footer-brand-logo{
+    display: none;
+}
+.burger{
+    display: none;
+}
+.brand-logo{
+    display: none;
+}
+
+
+
+@media all and (max-width:376px){
+    *{
+        overflow-x: hidden;
+    }
+    header{
+        background-image: url('../img/Frame\ 1422.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 721px;
+
+    }
+    .title-2{
+        width: 211px;
+        font-size: 24px;
+        font-weight: 700;
+    }   
+    .course-description{
+        font-size: 18px;
+    }
+    .course-under-description{
+        font-size: 18px;
+    }
+    .about-course{
+        padding-top: 70px;
+        height: 424px;
+    } 
+    .course-info{
+        width: 317px;
+        margin-top: 54px;
+        margin-bottom: 34px;
+    }
+    .course-info p{
+        
+        font-size: 16px;
+    }
+    .course-info span {
+        font-size: 12px;
+    }
+    .container{
+        margin-left: 31px;
+        margin-right: 32px;
+        width: 317px;
+    }
+    .first-unit-container{
+        margin-left: 0;
+        margin-right: 0;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .application-form-buttons-dark button {
+        width: 313px;
+    }
+    .logo{
+        display: none;
+    }
+    .brand-logo{
+        display: block;
+    }
+    .burger{
+        display: block;
+    }
+    .nav-container{
+        width: 317px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .title{
+        width: 317px;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .text-abt-skills p{
+        width: 317px;
+        font-size: 18px;
+        font-weight: 400;
+        margin-top: 15px;
+    }
+    .text-abt-skills p:first-child{
+        margin-top: 10px;
+    }
+    .first-unit-main{
+        margin-left: -31px;
+        margin-right: -31px;
+    }
+    .nav-links{
+        display: none;
+    }
+    .first-unit-pic img{
+        width: 312px;
+        height: 312px;
+        position: relative;
+        z-index: 1;
+    }
+    .headline{
+        padding-top: 0px;
+    }
+    .abt-skills-pic{
+        display: none;
+    }
+    .text-abt-skills{
+        width: 375px;
+    }
+    .about-skills{
+        background-image: url('../img/Frame\ 1422.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: fit-content;
+        padding-top: 40px;
+    }
+    .title-2{
+        width: 317px;
+        font-size: 24px;
+    }
+    .advantages-p{
+        margin-top: 30px;
+        margin-bottom: 70px;
+    }
+    .advantages-unit{
+        height: fit-content;
+    }
+  
+    .courses-container{
+        flex-direction: column;
+        width: 375px;
+    }
+    .left-side{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .left-side .under-title {
+        width: 317px;
+        font-size: 16px;
+        height: 60px;
+        color: white;
+        margin-top: -21px;
+        
+    }
+    .right-side{
+        width: 100%;
+        padding-bottom: 50px;
+    }
+    .right-side p {
+        font-size: 16px;
+        height: 38px;
+        width: 317px;
+        
+    }
+    .courses-programm{
+        height: fit-content;
+    }
+
+    .application-form-buttons-dark{
+        padding-bottom: 60px;
+        margin-top: 40px;
+    }
+
+    .application-form-buttons-dark input:first-child {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    
+    .application-form-buttons-dark button{
+        margin-top: -20px;
+        margin-bottom: 20px;
+        width: 320px;
+        height: 52px;
+    }
+    .application-form-buttons-dark input{
+        margin-top: -20px;
+        margin-bottom: 20px;
+        width: 314px;
+        height: 52px;
+    }
+    .application-form-dark{
+        padding-top: 50px;
+        height: 537px;
+        overflow-y: hidden;
+    }
+    
+    .applic-form-p-dark{
+        font-size: 16px;
+        width: 267px;
+    }
+    #footer-brand-logo{
+        display: block;
+        align-self: center;
+        
+        
+    }
+    .footer{
+        height: 735px;
+        width: 375px;    }
+    #footer-logo{
+        display: none;
+    }
+
+    .p-content-bolder{
+        width: 231px;
+    }
+    .footer-p{
+        width: 231px;
+    }
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+        width: 312px;
+        justify-content: space-around;
+        
+    }
+    .upper{
+        display: flex;
+        flex-direction: column-reverse;
+        width:375px;
+        border-bottom: none;
+        height: 400px;
+        justify-content: space-evenly;
+        
+
+    }
+    
+    .upper div{
+        height: 95px;
+        align-self: center;
+    }
+
+    .lower{
+        align-self: center;
+        display: flex;   
+    }
+
+}
+

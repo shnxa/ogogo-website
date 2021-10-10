@@ -9,7 +9,9 @@ a{
     text-decoration: none;
 }
 
-   
+button:hover {
+    cursor:pointer;
+}
 body {
     overflow-x: hidden;
 }
@@ -27,7 +29,8 @@ body::-webkit-scrollbar{
     background-image: url('../img/First\ page\ \(2\).png');
     background-size: 100%;
     background-repeat: no-repeat;
-    padding-bottom: 246px;
+    padding-bottom: 46px;
+    
 }
 .first-unit-container{
     display: flex;
@@ -157,10 +160,12 @@ body::-webkit-scrollbar{
     
 }
 .second-unit-main {
-    height: 862px;
+    height: fit-content;
+    padding-bottom: 90px;
+    padding-top: 90px;
 }
 .title-2 {
-    margin-top: 90px;
+    
     font-size: 48px;
     font-weight: 600;
     display: block;
@@ -168,7 +173,11 @@ body::-webkit-scrollbar{
 
 .sliders{
     display: flex;
-    
+    overflow-x: scroll;
+}
+
+.sliders::-webkit-scrollbar{
+    visibility: hidden;
 }
 
 .slidesToRight {
@@ -213,12 +222,11 @@ body::-webkit-scrollbar{
 }
 
 
-.slider-btn {
-    display: block;
-}
+
 .sliders div{
     margin-right: 48px;
     margin-top: 27px;
+    position: relative;
 }
 
 .sliders svg {
@@ -240,7 +248,7 @@ body::-webkit-scrollbar{
 .second-unit-content {
     width: 305px;
     height: 85px;
-    margin-top: 104px;
+    margin-top: 122px;
     margin-left: 50px;
     position: absolute;
     z-index: 6;
@@ -248,37 +256,13 @@ body::-webkit-scrollbar{
     font-weight: 400;
 }
 
-.slider-btn button {
-    border-radius: 90%;
-    padding: 10px 10px 10px 10px;
-    margin-right: 20px;
-    margin-top: 100px;
-}
 
 
 .courses-list-item a{
     color: black;
 }
 
-#slider-btn-left{
-    background-color: transparent;
-    border: 1px solid #886e6e;
-}
 
-#courses-btn-left {
-    background-color: transparent;
-    border: 1px solid #886e6e;
-}
-#courses-btn-right {
-    background: linear-gradient(180deg, #FF7A00 25%, #FF9900 87%); 
-    border: 1px solid #ff6e00;
-    box-shadow: 2px 6px 10px rgba(255, 122, 0, 0.25);
-}
-#slider-btn-right {
-    background: linear-gradient(180deg, #FF7A00 25%, #FF9900 87%); 
-    border: 1px solid #ff6e00;
-    box-shadow: 2px 6px 10px rgba(255, 122, 0, 0.25);
-}
 
 #second-unit-container{
     display: flex;
@@ -323,7 +307,7 @@ body::-webkit-scrollbar{
 }
 
 .fourth-unit{
-    height: 862px;
+    height: fit-content;
     
 }
 
@@ -354,7 +338,8 @@ body::-webkit-scrollbar{
     justify-content: space-between;
     margin-left: -50px;
     overflow-y: hidden;
-    height: 689px;
+    height: fit-content;
+    
 
     
 }
@@ -364,6 +349,10 @@ body::-webkit-scrollbar{
 }
 .courses-list-item{
     position: relative;
+    padding-bottom: 80px;
+}
+.courses-list-item:first-child{
+    margin-left: 81px;
 }
 
 .courses-list-item:last-child{
@@ -375,7 +364,7 @@ body::-webkit-scrollbar{
 
 .courses-name {
     z-index: 6;
-    margin: -265px 120px 144px 136px;
+    margin: -265px 120px 144px 112px;
     font-weight: 600;
     font-size: 31px;
     text-align: center;
@@ -385,9 +374,9 @@ body::-webkit-scrollbar{
     font-weight: 400;
     font-size: 16px;
     text-align: center;
-    margin: -135px 30px 144px 136px;
+    margin: -135px 30px 144px 20px;
     line-height: 17px;
-    position: absolute;
+    position: relative;
 }
 
 .application-btn {
@@ -397,7 +386,7 @@ body::-webkit-scrollbar{
     background: transparent;
     border: 1px solid black;
     font-size: 13px;
-    margin: -70px 30px 144px 136px;
+    margin: -120px 30px 144px 136px;
     z-index: 6;
     position: absolute;
     align-self: center;
@@ -491,7 +480,9 @@ body::-webkit-scrollbar{
 
 
 .students-works-unit{
-    height: 1691px;
+    padding-top: 90px;
+    height: fit-content;
+    padding-bottom: 120px;
 }
 
 .students-work{
@@ -549,8 +540,8 @@ body::-webkit-scrollbar{
 }
 .installment-plan {
     background-image: url("../img/Frame\ 141.png");
-    height: 430px;
-    
+    height: fit-content;
+    padding-bottom: 70px;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -569,7 +560,11 @@ body::-webkit-scrollbar{
     
 }
 
-
+.faq-unit{
+    padding-top: 90px;
+    height: fit-content;
+    padding-bottom: 35px;
+}
 
   .accordion .qa-container.active .label::before {
     content: '-';
@@ -622,7 +617,7 @@ body::-webkit-scrollbar{
 }
 
 .application-form-dark {
-    margin-top: -30px;
+    margin-top: 60px;
     margin-bottom: 70px;
 }
 
@@ -747,7 +742,71 @@ body::-webkit-scrollbar{
 .brand-logo {
     display: none;
 }
+#application-form-window{
+    width: 678px;
+    height: 834px;
+    margin-left: 340px;
+    display: none;
     
+}
+#application-form-info{
+    margin-left: 91px;
+    margin-top: 66px;
+}
+.window-container{
+    margin-left: 72px;
+    margin-right: 72px;
+}
+.window-container p {
+    font-size: 16px;
+    font-weight: 500;
+}
+.window-container div{
+    display: flex;
+    flex-direction: column;
+}
+.window-container input{
+    width: 559px;
+    height: 56px;
+    border-radius: 10px;
+    border: 1px solid #7B7B7B;
+}
+#window-title{
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 27px;
+    margin-top: 27px;
+}
+#form-window-header{
+    background-image: url('../img/Group\ 13851.png');
+    background-size: cover;
+    height: 372px;
+    background-repeat: no-repeat;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+.form-window-title{
+    font-size: 34px;
+    font-weight: 700;
+    color: white;
+}
+.countdown{
+    display: flex;
+    flex-direction: row;
+    margin-left: 101px;
+}
+#form-close-btn{
+    margin-left: 630px;
+    
+}
+.countdown p{
+    font-size: 68px;
+    color: white;
+}
+.countdown span {
+    font-size: 68px;
+    color: white;
+}
 #footer-brand-logo{
     display: none;
     margin-top: 43px;
@@ -757,7 +816,7 @@ body::-webkit-scrollbar{
     display: none;
 }
 
-@media all and (min-width:319px)and (max-width: 376px) {
+@media all and (max-width: 376px) {
     *{
         overflow-x: hidden;
     }
@@ -780,9 +839,7 @@ body::-webkit-scrollbar{
         margin-bottom: -150px;
     }
 
-    .first-unit-pic img {
-        width: 375px;
-    }
+    
     .first-unit-container{
         display: flex;
         flex-direction: column-reverse;
@@ -874,7 +931,8 @@ body::-webkit-scrollbar{
     .courses-list{
         flex-direction: column;
         overflow-y: hidden;
-        position: absolute;}
+        align-items: center;
+        }
 
 
         .second-unit-main{
@@ -1042,7 +1100,8 @@ body::-webkit-scrollbar{
    
 
     .fourth-unit{
-        height: 1759px;
+        height: 2159px;
+        overflow-y: hidden;
     }
     .faq-unit{
         
@@ -1065,6 +1124,7 @@ body::-webkit-scrollbar{
         height: 62px;
 
     }
+
 
 
 
@@ -1108,8 +1168,10 @@ body::-webkit-scrollbar{
     #footer-brand-logo{
         display: block;
         align-self: center;
-        
-        
+    }
+
+    .courses-list-item:first-child{
+        margin-left: 46px
     }
     .footer{
         height: 735px;
@@ -1157,3 +1219,78 @@ body::-webkit-scrollbar{
     }
 }
 
+@media all and (max-width:415px){
+    *{
+        overflow-x: hidden;
+    }
+
+
+
+    .first-unit{
+        padding-bottom: 106px;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        background-image: url('../img/Frame\ 142.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    
+    .first-unit-pic img{
+        margin-left: -180px;
+        zoom: 90%;
+        
+        
+      }
+      .first-unit-pic{
+          margin-bottom: -150px;
+      }
+      .container{
+          margin-right: 28px;
+          margin-left: 28px;
+      }
+      .nav-container{
+          width: 390px;
+      }
+      .first-unit-container{
+          display: flex;
+          flex-direction: column-reverse;
+      }
+      .logo{
+          display: none;
+      }
+      .brand-logo{
+          display: block;
+      }
+      .burger{
+          display: block;
+      }
+      .nav-links{
+          display: none;
+      }
+
+      .title{
+          font-size: 36px;
+      }
+
+      .slider-btn{
+          display: none;
+      }
+
+      .title-2{
+        width: 393px;
+        font-size: 36px;
+    }
+    .sliders{
+        flex-direction: column;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        height: fit-content;
+        padding-bottom: 40px;
+    }
+
+    .animated{
+        display: none;
+    }
+}

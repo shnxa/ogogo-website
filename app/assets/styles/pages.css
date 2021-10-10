@@ -8,6 +8,9 @@ a{
     color: white;
     text-decoration: none;
 }
+button:hover{
+    cursor: pointer;
+}
 
 * {
     margin: 0 0 0 0;
@@ -180,8 +183,9 @@ header {
 }
 
 .about-course{
-    height: 360px;
+    height: fit-content;
     padding-top: 90px;
+    padding-bottom: 90px;
 }
 
 .title-2{
@@ -206,8 +210,14 @@ header {
 
 .about-skills {
     background-color: #1c1c1c;
-    height: 606px;
+    height: fit-content;
     padding-top: 102px;
+    padding-bottom: 90px;
+    
+}
+.text-abt-skills{
+    height: 386px;
+    width: 80%;
 }
 
 .text-abt-skills p{
@@ -220,12 +230,10 @@ header {
 .text-abt-skills p:first-child{
     margin-top: 30px;
 }
-.text-abt-skills{
-    width: 850px;
-}
+
 
 .first-unit-pic img{
-    width: 669px;
+    
     height: 669px;
     margin: 0 0 0 0;
     z-index: 2;
@@ -235,6 +243,7 @@ header {
     margin-right: -81px;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 90px;
 }
 .courses-programm{
     height: 590px;
@@ -244,13 +253,7 @@ header {
     background-repeat: no-repeat;
 
 }
-.abt-py-span{
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19px;
-    color: white;
-    display: block;
-}
+
 
 .courses-container{
     display: flex;
@@ -287,27 +290,17 @@ width: 50%;
     color: white;
 
 }
-.page-svg-background{
-    size: 100%;
-    position: relative;
-    zoom: 110%;
-}
-.svg-background{
-    position: absolute;
-    z-index: 2;
-    margin-top: -32px;
-}
+
 
 
 .advantages-unit{
-    padding-top: 49px;
-    height: 535px;
+    padding-top: 90px;
+    height: fit-content;
+    padding-bottom: 110px;
 }
 
 .advantages-p{
     margin-top: 90px;
-
- 
 }
 
 .advantages-p p {
@@ -391,11 +384,22 @@ width: 50%;
 
 .abt-skills-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+#py-page-img{
+    position: absolute;
+    margin-left: 590px;
+    margin-top: 106px;
+    
+}
+#html-page-img{
+    margin-left: 110px;
 }
 .abt-skills-pic img{
+    
     margin-top: -180px;
     padding-bottom: 20px;
+   
 }
 
 #scratch-skills-pic{
@@ -465,7 +469,8 @@ width: 50%;
         background-image: url('../img/Frame\ 1422.png');
         background-size: cover;
         background-repeat: no-repeat;
-        height: 721px;
+        height: fit-content;
+        
 
     }
     .title-2{
@@ -482,6 +487,7 @@ width: 50%;
     .about-course{
         padding-top: 70px;
         height: 424px;
+        overflow-y: hidden;
     } 
     .course-info{
         width: 317px;
@@ -505,6 +511,7 @@ width: 50%;
         margin-right: 0;
         display: flex;
         flex-direction: column-reverse;
+        padding-bottom: 0;
     }
     .application-form-buttons-dark button {
         width: 313px;
@@ -523,11 +530,14 @@ width: 50%;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 40px;
     }
     .title{
         width: 317px;
-        font-size: 24px;
+        font-size: 36px;
         font-weight: 700;
+        margin-bottom: 0px;
+        margin-top: 40px;
     }
 
     .text-abt-skills p{
@@ -593,7 +603,7 @@ width: 50%;
         font-size: 16px;
         height: 60px;
         color: white;
-        margin-top: -21px;
+        margin-top: 21px;
         
     }
     .right-side{
@@ -621,21 +631,22 @@ width: 50%;
     }
     
     .application-form-buttons-dark button{
-        margin-top: -20px;
+        margin-top: 0px;
         margin-bottom: 20px;
-        width: 320px;
+        width: 317px;
         height: 52px;
     }
     .application-form-buttons-dark input{
         margin-top: -20px;
-        margin-bottom: 20px;
-        width: 314px;
+        margin-bottom: 10px;
+        width: 311px;
         height: 52px;
     }
     .application-form-dark{
         padding-top: 50px;
-        height: 537px;
+        height: fit-content;
         overflow-y: hidden;
+        padding-bottom: 40px;
     }
     
     .applic-form-p-dark{
@@ -649,8 +660,10 @@ width: 50%;
         
     }
     .footer{
-        height: 735px;
-        width: 375px;    }
+        height: fit-content;
+        width: 375px;   
+        padding-top: 40px;
+    padding-bottom: 40px; }
     #footer-logo{
         display: none;
     }

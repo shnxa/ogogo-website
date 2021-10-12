@@ -233,22 +233,30 @@ body::-webkit-scrollbar{
     position: relative;
     z-index: 2;
 }
+.sliders div:first-child{
+    position: relative;
+    margin-left: 0;
+}
 .sliders div:last-child{
     position: relative;
 }
 .sliders span{
-    margin-top: 57px;
-    margin-left: 50px;
+    margin-top: 239px;
+    margin-left: -132px;
+    width: 400px;
     font-size: 24px;
     font-weight: 600;
     position: absolute;
     z-index: 6;
 }
+#first-span{
+    margin-top: 260px;
+}
 
 .second-unit-content {
     width: 305px;
     height: 85px;
-    margin-top: 122px;
+    margin-top: 129px;
     margin-left: 50px;
     position: absolute;
     z-index: 6;
@@ -588,13 +596,15 @@ body::-webkit-scrollbar{
       }
       .accordion .qa-container.active .content {
         overflow: visible;
-        height: 150px;
+        padding-top: 10px;
       }
-
+      #qa-first-child.active{
+          height: 220px;
+      }
      
 
       .qa-container.active{
-          height: 190px;
+          height: 120px;
           padding-bottom: 20px;
 
         
@@ -742,71 +752,7 @@ body::-webkit-scrollbar{
 .brand-logo {
     display: none;
 }
-#application-form-window{
-    width: 678px;
-    height: 834px;
-    margin-left: 340px;
-    display: none;
-    
-}
-#application-form-info{
-    margin-left: 91px;
-    margin-top: 66px;
-}
-.window-container{
-    margin-left: 72px;
-    margin-right: 72px;
-}
-.window-container p {
-    font-size: 16px;
-    font-weight: 500;
-}
-.window-container div{
-    display: flex;
-    flex-direction: column;
-}
-.window-container input{
-    width: 559px;
-    height: 56px;
-    border-radius: 10px;
-    border: 1px solid #7B7B7B;
-}
-#window-title{
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 27px;
-    margin-top: 27px;
-}
-#form-window-header{
-    background-image: url('../img/Group\ 13851.png');
-    background-size: cover;
-    height: 372px;
-    background-repeat: no-repeat;
-    padding-top: 15px;
-    border-radius: 20px;
-}
-.form-window-title{
-    font-size: 34px;
-    font-weight: 700;
-    color: white;
-}
-.countdown{
-    display: flex;
-    flex-direction: row;
-    margin-left: 101px;
-}
-#form-close-btn{
-    margin-left: 630px;
-    
-}
-.countdown p{
-    font-size: 68px;
-    color: white;
-}
-.countdown span {
-    font-size: 68px;
-    color: white;
-}
+
 #footer-brand-logo{
     display: none;
     margin-top: 43px;
@@ -870,7 +816,7 @@ body::-webkit-scrollbar{
         margin-top: 42px;
         overflow-y: hidden;
     }
-
+  
    
    .title-2{
        width: 253px;
@@ -878,10 +824,10 @@ body::-webkit-scrollbar{
    }
    body {overflow-x: hidden;}
    .sliders span {
-       margin-left: 25px;
-       margin-top: 85px;
+       margin-left: -158px;
+       margin-top: 270px;
        font-size: 18px;
-       position: absolute;
+       width: 281px;
        z-index: 6;}
    .burger{
        display: block;}
@@ -895,7 +841,7 @@ body::-webkit-scrollbar{
         width: 375px;}
    .sliders{
        flex-direction: column;
-    height: 2228px;
+    height: fit-content;
     overflow-y: hidden;}
 
    .slider-btn{
@@ -936,7 +882,8 @@ body::-webkit-scrollbar{
 
 
         .second-unit-main{
-            height: 2328px;
+            height: fit-content;
+            padding-bottom: 40px;
             overflow-y: hidden;
         }
    
@@ -1020,15 +967,18 @@ body::-webkit-scrollbar{
         margin-bottom: 60px;
     }
     .application-form-buttons button{
-        width: 313px;
+        width: 320px;
         height: 52px;
-        margin-top: 24px;
+        margin-top: 10px;
     }
 
     .application-form-buttons input{
         width: 313px;
         height: 52px;
-        margin-top: 24px    ;
+        margin-top: 10px    ;
+    }
+    .application-form-buttons input:first-child{
+        margin-top: 20px;
     }
     .courses-list-item img{
         width: 312px;
@@ -1050,7 +1000,7 @@ body::-webkit-scrollbar{
 
     }
     .installment-plan{
-        height: 529px;
+        height: fit-content;
     }
     #inst-plan-title{
         font-size: 24px;
@@ -1084,7 +1034,7 @@ body::-webkit-scrollbar{
     
     
     .students-works-unit{
-        height: 2398px;
+        height: fit-content;
     }
     .courses-btn{
         width: 312px;
@@ -1157,7 +1107,8 @@ body::-webkit-scrollbar{
     }
     .application-form-dark{
         margin-top: 60px;
-        height: 537px;
+        height: fit-content;
+        margin-bottom: 0;
         overflow-y: hidden;
     }
     
@@ -1216,16 +1167,21 @@ body::-webkit-scrollbar{
 
     .modalWindow{
         width: 375px;
+
+    }
+    .modal-main-right{
+        display: none;
+    }
+    .modal-window-main{
+        margin-right: 50px;
     }
 }
 
-@media all and (max-width:415px){
+@media all and (min-width:380px)and (max-width:415px){
     *{
         overflow-x: hidden;
     }
-
-
-
+    
     .first-unit{
         padding-bottom: 106px;
         background-size: cover;
@@ -1235,62 +1191,426 @@ body::-webkit-scrollbar{
         background-size: cover;
         background-repeat: no-repeat;
     }
-
     
     .first-unit-pic img{
-        margin-left: -180px;
-        zoom: 90%;
-        
-        
-      }
-      .first-unit-pic{
-          margin-bottom: -150px;
-      }
-      .container{
-          margin-right: 28px;
-          margin-left: 28px;
-      }
-      .nav-container{
-          width: 390px;
-      }
-      .first-unit-container{
-          display: flex;
-          flex-direction: column-reverse;
-      }
-      .logo{
-          display: none;
-      }
-      .brand-logo{
-          display: block;
-      }
-      .burger{
-          display: block;
-      }
-      .nav-links{
-          display: none;
-      }
-
-      .title{
-          font-size: 36px;
-      }
-
-      .slider-btn{
-          display: none;
-      }
-
-      .title-2{
-        width: 393px;
-        font-size: 36px;
+      margin-left: -180px;
+      zoom: 90%;
     }
+    .first-unit-pic{
+        margin-bottom: -150px;
+    }
+    
+    
+    .first-unit-container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .content-headlines{
+        font-size: 18px;
+        margin-top: 24px;
+    }
+    
+    .p-content{
+        width: 330px;
+    }
+    
+    .content-container{
+        overflow-y: hidden;
+    
+    }
+    .first-column{
+        overflow-y: hidden;
+    }
+    
+    .third-unit{
+    
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-bottom: 42px;
+        margin-top: 42px;
+        overflow-y: hidden;
+    }
+    
+    
+    .title-2{
+       width: 300px;
+       font-size: 30px;
+    }
+    body {overflow-x: hidden;}
+    .sliders span {
+       margin-right: 45px;
+       margin-left: -140px;
+       margin-top: 240px;
+       font-size: 18px;
+       width: 300px;
+       }
+    .burger{
+       display: block;}
+    .brand-logo {
+    display: block;}
+    .logo{
+       display: none;}
+    .container{
+        margin-left: 31px;
+        margin-right: 31px;
+        width: 375px;}
     .sliders{
-        flex-direction: column;
-        overflow-x: hidden;
-        overflow-y: scroll;
-        height: fit-content;
-        padding-bottom: 40px;
-    }
-
+       flex-direction: column;
+    height: 2228px;
+    overflow-y: hidden;}
+    
+    .slider-btn{
+       display: none;}
+       .second-unit-content{
+           overflow-y: hidden;
+           padding-right: 14px;
+           margin-left: 45px;   
+           padding:0px 14px 10px 0px;
+           margin-bottom: 10px;
+           margin-right: 45px;
+           width: 281px;
+           font-size: 16px;
+           line-height: 14px;
+           position: relative;
+           font-weight: 400;
+       }
+    .sliders svg {
+        zoom: 100%;
+        width: 375px;
+        margin-top: -240px;
+        z-index: -1;}
+    .sliders div{
+        margin-top: 12px;
+        margin-bottom: 20px;
+        height: max-content;
+        overflow-y: hidden;
+        width: 400px;
+        position: relative;}
+    
+    .sliders {
+        
+        width: 375px;}
     .animated{
+        display: none;}
+    
+    .courses-list{
+        flex-direction: column;
+        overflow-y: hidden;
+        align-items: center;
+        }
+    
+    
+        .second-unit-main{
+            height: fit-content;
+            margin-bottom: -280px;
+            overflow-y: hidden;
+        }
+    
+    .courses-list-item{
+        width: 375px;
+        height: 312px;
+        overflow-y: hidden;
+        margin-left: 46px ;}
+    
+    .application-form{
+        width: 375px;}
+    
+    .application-btn {
+        margin: 219px 0 0 -241px;
+        position: absolute;
+        overflow-y: hidden;
+        z-index: 6;
+        width: 170px;
+        height: 36px;}
+    
+    .courses-name{
+        width: 163px;
+        height: 30px;
+        margin: -186px 150px 0 100px;
+        position: relative;
+        overflow-y: hidden;}
+    .fifth-unit{
+        
+        overflow-y: hidden;
+        height: fit-content;
+        padding-bottom: 70px;}
+    #right-column{
+        width: 400px;}
+    .fifth-unit-content{
+       display: flex;
+       flex-direction: column;}
+    
+    #ux-ui{
+       margin-top: 0;}
+    .content-headlines{
+       margin-top: 0;
+       margin-bottom: 7px;}
+    .fifth-unit-items{
+       margin-top:10px;
+       margin-bottom: 40px;
+    }
+    .courses-description{
+        margin: 24px 150px 0 59px;
+        font-size: 14px;
+        width: 242px;
+        position: relative;
+    }
+    
+    .projects-container{
+        flex-direction: column;
+    }
+    
+    .nav-container{
+        width: 365px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .first-column{
+       height: 100vh;
+    }
+    
+    .dropdown{
+        width: 134px;
+    }
+    .nav-links{
         display: none;
     }
+    .works-container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #applic-form-p{
+        font-size: 24px;
+        margin-top: 61px;
+        margin-bottom: 40px;
+    }
+    .application-form-buttons button{
+        margin-top: -20px;
+        margin-bottom: 20px;
+        width: 352px;
+        height: 52px;
+    }
+    
+    .application-form-buttons input{
+        margin-top: -20px;
+        margin-bottom: 20px;
+        width: 345px;
+        height: 52px;
+    }
+    .application-form-buttons input:first-child{
+        margin-top: 20px;
+    }
+    .courses-list-item img{
+        width: 375px;
+        height: 375px;
+    }
+    
+    .students-work img{
+        width: 365px;
+
+    }
+    
+    .projects-container{
+        height: fit-content;
+        padding-bottom: 20px;
+        overflow-y:hidden ;
+        overflow-x:hidden;
+    
+    }
+    .installment-left{
+        height: 290px;
+        overflow-y: hidden;
+    
+    }
+    .installment-plan{
+        height: 460px;
+    }
+    #inst-plan-title{
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    #faq{
+        margin-bottom: 22px;
+    }
+    .content-headlines{
+        font-size: 17px;
+        width: 375px;
+        font-weight: 400;
+    }
+    
+    .installment-right svg{
+        width: 98px;
+        height: 98px;
+        margin-top: -57px;
+        padding-bottom: -47px;
+        
+    }
+    .installment-right{
+        margin-left: 20px;
+    }
+    .installment-cont{
+        flex-direction: column;
+        overflow-y: hidden;
+        background-size: cover;
+        padding-right: 11px;
+    
+    }
+    #first-unit-p{
+        display: none;
+    }
+    
+    
+    .students-works-unit{
+        height: fit-content;
+        padding-bottom: 90px;
+        overflow-y: hidden ;
+        
+    }
+    .courses-btn{
+        width: 375px;
+    }
+    
+    .the-review{
+        width: 375px;
+    }
+    
+    .title{
+        font-size: 24px;
+    }
+    
+    
+    .fourth-unit{
+        height: 2159px;
+        overflow-y: hidden;
+    }
+    .faq-unit{
+        
+        margin-top: -43px;
+        margin-bottom: -30px;
+        overflow-y: hidden;
+    }
+    
+    .accordion .qa-container{
+        width:375px;
+        height: 90px;
+        overflow-y: hidden;
+        padding-top: 15px;
+        
+        
+    }   
+    .accordion .label{
+        font-size: 18px;
+        width: 330px;
+        height: 62px;
+    
+    }
+    
+    
+    
+    .accordion {
+        margin-right: 31px;
+    }
+    .accordion .qa-container.active {
+        height: 250px;
+    }
+    
+    
+    .application-form-buttons-dark{
+        padding-bottom: 60px;
+        margin-top: 40px;
+    }
+    
+    .application-form-buttons-dark input:first-child {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    
+    .application-form-buttons-dark button{
+        margin-top: -20px;
+        margin-bottom: 20px;
+        width: 352px;
+        height: 52px;
+    }
+    .application-form-buttons-dark input{
+        margin-top: -20px;
+        margin-bottom: 20px;
+        width: 345px;
+        height: 52px;
+    }
+    .application-form-dark{
+        margin-top: 60px;
+        height: fit-content;
+        margin-bottom: -15px;
+        overflow-y: hidden;
+    }
+    
+    .applic-form-p-dark{
+        font-size: 16px;
+        width: 375px;
+    }
+    #footer-brand-logo{
+        display: block;
+        align-self: center;
+    }
+    
+    .courses-list-item:first-child{
+        margin-left: 46px
+    }
+    .footer{
+        height: 634px;
+        
+        width: 414px;    }
+    #footer-logo{
+        display: none;
+    }
+    
+    .p-content-bolder{
+        width: 231px;
+    }
+    .footer-p{
+        width: 231px;
+    }
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+        width: 375px;
+        justify-content: space-around;
+        
+    }
+    .upper{
+        display: flex;
+        flex-direction: column-reverse;
+        width:414px;
+        border-bottom: none;
+        height: 400px;
+        justify-content: space-evenly;
+        
+    
+    }
+    
+    .upper div{
+        height: 95px;
+        align-self: center;
+    }
+    
+    .lower{
+        align-self: center;
+        display: flex;   
+    }
+    
+    .modalWindow{
+        width: 414px;
+    }
+    
+    .modal-main-right{
+        display: none;
+    }
+    .modal-window-main{
+        margin-right: 20px;
+    }
+    
 }

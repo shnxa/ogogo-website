@@ -212,11 +212,11 @@ header {
     background-color: #1c1c1c;
     height: fit-content;
     padding-top: 102px;
-    padding-bottom: 90px;
+    padding-bottom: 120px;
     
 }
 .text-abt-skills{
-    height: 386px;
+    
     width: 80%;
 }
 
@@ -577,6 +577,7 @@ width: 50%;
         background-repeat: no-repeat;
         height: fit-content;
         padding-top: 40px;
+        padding-bottom: 60px;
     }
     .title-2{
         width: 317px;
@@ -660,10 +661,10 @@ width: 50%;
         
     }
     .footer{
-        height: fit-content;
+        height: 645px;
         width: 375px;   
         padding-top: 40px;
-    padding-bottom: 40px; }
+        padding-bottom: 40px; }
     #footer-logo{
         display: none;
     }
@@ -690,6 +691,272 @@ width: 50%;
         justify-content: space-evenly;
         
 
+    }
+    
+    .upper div{
+        height: 95px;
+        align-self: center;
+    }
+
+    .lower{
+        align-self: center;
+        display: flex;   
+    }
+
+    .modalWindow{
+        width: 375px;
+
+    }
+    .modal-main-right{
+        display: none;
+    }
+    .modal-window-main{
+        margin-right: 20px;
+    }
+
+
+}
+
+@media all and (min-width:380px) and (max-width:415px){
+    *{
+        overflow-x: hidden;
+    }
+    header{
+        background-image: url('../img/Frame\ 1422.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: fit-content;
+        
+
+    }
+    .title-2{
+        width: 211px;
+        font-size: 24px;
+        font-weight: 700;
+    }   
+    .course-description{
+        font-size: 18px;
+    }
+    .course-under-description{
+        font-size: 18px;
+    }
+    .about-course{
+        padding-top: 70px;
+        height: 424px;
+        overflow-y: hidden;
+    } 
+    .course-info{
+        width: 375px;
+        margin-top: 54px;
+        margin-bottom: 34px;
+    }
+    .course-info p{
+        
+        font-size: 16px;
+    }
+    .course-info span {
+        font-size: 12px;
+    }
+    .container{
+        margin-left: 31px;
+        margin-right: 32px;
+        width: 375px;
+    }
+    .first-unit-container{
+        margin-left: 0;
+        margin-right: 0;
+        display: flex;
+        flex-direction: column-reverse;
+        padding-bottom: 0;
+    }
+    .application-form-buttons-dark button {
+        width: 313px;
+    }
+    .logo{
+        display: none;
+    }
+    .brand-logo{
+        display: block;
+    }
+    .burger{
+        display: block;
+    }
+    .nav-container{
+        width: 365px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    .title{
+        width: 365px;
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 0px;
+        margin-top: 40px;
+    }
+
+    .text-abt-skills p{
+        width: 365px;
+        font-size: 18px;
+        font-weight: 400;
+        margin-top: 15px;
+    }
+    .text-abt-skills p:first-child{
+        margin-top: 10px;
+    }
+    .first-unit-main{
+        margin-left: -31px;
+        margin-right: -31px;
+    }
+    .nav-links{
+        display: none;
+    }
+    .first-unit-pic img{
+        width: 375px;
+        height: 375px;
+        position: relative;
+        z-index: 1;
+    }
+    .headline{
+        padding-top: 0px;
+    }
+    .abt-skills-pic{
+        display: none;
+    }
+    .text-abt-skills{
+        width: 375px;
+    }
+    .about-skills{
+        background-image: url('../img/Frame\ 1422.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: fit-content;
+        padding-top: 40px;
+    }
+    .title-2{
+        width: 375px;
+        font-size: 24px;
+    }
+    .advantages-p{
+        margin-top: 30px;
+        margin-bottom: 70px;
+    }
+    .advantages-unit{
+        height: fit-content;
+    }
+  
+    .courses-container{
+        flex-direction: column;
+        width: 375px;
+    }
+    .left-side{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .left-side .under-title {
+        width: 375px;
+        font-size: 16px;
+        height: 60px;
+        color: white;
+        margin-top: 21px;
+        
+    }
+    .right-side{
+        width: 100%;
+        padding-bottom: 50px;
+    }
+    .right-side p {
+        font-size: 16px;
+        height: 38px;
+        width: 375px;
+        
+    }
+    .courses-programm{
+        height: fit-content;
+    }
+
+    .application-form-buttons-dark{
+        padding-bottom: 60px;
+        margin-top: 40px;
+    }
+
+    .application-form-buttons-dark input:first-child {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    
+    .application-form-buttons-dark button{
+        margin-top: 0px;
+        margin-bottom: 20px;
+        width: 351px;
+        height: 52px;
+    }
+    .application-form-buttons-dark input{
+        margin-top: -20px;
+        margin-bottom: 10px;
+        width: 345px;
+        height: 52px;
+    }
+    .application-form-dark{
+        padding-top: 50px;
+        height: fit-content;
+        overflow-y: hidden;
+        padding-bottom: 40px;
+    }
+    
+    .applic-form-p-dark{
+        font-size: 16px;
+        width: 267px;
+    }
+    #footer-brand-logo{
+        display: block;
+        align-self: center;
+        
+        
+    }
+    .footer{
+        height: fit-content;
+        width: 414px;   
+        padding-top: 40px;
+    padding-bottom: 40px; }
+    #footer-logo{
+        display: none;
+    }
+
+    .p-content-bolder{
+        width: 231px;
+    }
+    .footer-p{
+        width: 231px;
+    }
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+        width: 375px;
+        justify-content: space-around;
+        
+    }
+    .upper{
+        display: flex;
+        flex-direction: column-reverse;
+        width:414px;
+        border-bottom: none;
+        height: 400px;
+        justify-content: space-evenly;
+        
+
+    }
+
+    .modalWindow{
+        width: 414px;
+
+    }
+    .modal-main-right{
+        display: none;
+    }
+    .modal-window-main{
+        margin-right: 20px;
     }
     
     .upper div{

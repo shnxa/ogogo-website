@@ -1,7 +1,8 @@
 const modal = document.getElementsByClassName("modalWindow")[0];
 const showModal = document.getElementsByClassName("dropdownBtn")[0];
 const closeModal = document.getElementById("modalBtn");
-const formWindow = document.getElementById('application-form-window')[0];
+const burger = document.getElementsByClassName("burger")[0];
+
 
 
 function toggleModal () {
@@ -14,14 +15,11 @@ function ModalOpen(event) {
     }
 }
 
-setTimeout(function(){
-    formWindow.classList.add('showModal')
-},20000)
-
 
 showModal.addEventListener("click", toggleModal);
 closeModal.addEventListener("click", toggleModal);
 modal.addEventListener("click", ModalOpen);
+burger.addEventListener("click", toggleModal)
 
 
 const accordion = document.getElementsByClassName('qa-container');
@@ -32,47 +30,39 @@ for (i=0; i<accordion.length; i++) {
   })
 }
 
-const applicationForm = document.getElementById('application-form-window');
 
 
-document.addEventListener('DOMContentLoaded', function () {
-    const today = new Date();
-    const tomorrow = new Date(today);
-    tomorrow.setDate(tomorrow.getDate()+1)
-    const deadline = new Date(tomorrow);
+
+  document.querySelector('#send').onclick = function(){
+    let message = [
+        'Новая заявка на пробный урок',
+        name,
+        phone
+      ]
     
-    let timerId = null;
+    let name = document.querySelector('#name').value;
+    const token = "2094930216:AAGvtGVVJqCqCsUTLfDsYBRtWIn3a9g5ZA0"
+    let phone = document.querySelector('#phone').value;
+    const url = 'http://api.telegram.org/bot'+token+'/sendMessage?chat_id=-567726567&text='
+    let xhttp = new XMLHttpRequest();
+    xhttp.open('GET', url+message + name + phone, true)
+    xhttp.send();
     
-    function declensionNum(num, words) {
-      return words[(num % 100 > 4 && num % 100 < 20) ? 2 : [2, 0, 1, 1, 1, 2][(num % 10 < 5) ? num % 10 : 5]];
-    }
-    
-    function countdownTimer() {
-      const diff = deadline - new Date();
-      if (diff <= 0) {
-        clearInterval(timerId);
-      }
-      
-      let hours = diff > 0 ? Math.floor(diff / 1000 / 60 / 60) % 24 : 0;
-      let minutes = diff > 0 ? Math.floor(diff / 1000 / 60) % 60 : 0;
-      const seconds = diff > 0 ? Math.floor(diff / 1000) % 60 : 0;
+}
 
-      $hours.textContent = hours < 10 ? '0' + hours : hours;
-      $minutes.textContent = minutes < 10 ? '0' + minutes : minutes;
-      $seconds.textContent = seconds < 10 ? '0' + seconds : seconds;
-
- 
-
-    }
-    let $hours = document.querySelector('.timer__hours');
-    let $minutes = document.querySelector('.timer__minutes');
-    const $seconds = document.querySelector('.timer__seconds');
-    
-    countdownTimer();
-    
-    timerId = setInterval(countdownTimer, 1000);
-  });
-
+document.querySelector('#send2').onclick = function(){
+  let phone = document.querySelector('#phone2').value;
+  let name = document.querySelector('#name2').value;
+  let message = [
+    'Новая заявка на консультацию',
+    name,
+    phone
+  ]
   
-
- 
+  const token = "2094930216:AAGvtGVVJqCqCsUTLfDsYBRtWIn3a9g5ZA0"
+  const url = 'http://api.telegram.org/bot'+token+'/sendMessage?chat_id=-567726567&text='
+  let xhttp = new XMLHttpRequest();
+  xhttp.open('GET', url+message, true)
+  xhttp.send();
+  
+}
